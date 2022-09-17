@@ -1,5 +1,98 @@
 .header {
+  display: flex;
+  justify-content: space-between;
   height: 13.9rem;
-  background-color: blue;
+  border-bottom: 1px solid var(--gray-100);
   width: 100%;
+  padding-inline: 3.2rem;
+  padding-block: 4rem;
+}
+
+.dateNow strong {
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: block;
+}
+
+.dateNow span {
+  display: block;
+  color: var(--gray-200);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.eventContainer {
+  display: flex;
+  align-items: center;
+}
+
+.eventContainer .createEvent {
+  background-color: var(--green-500);
+  color: var(--white);
+  border-radius: 0.6rem;
+  padding-inline: 2.4rem;
+  padding-block: 1rem;
+  font-size: 1.4rem;
+  outline: none;
+  border: none;
+  margin-right: 4rem;
+  cursor: pointer;
+}
+
+.eventContainer input {
+  
+  width: 46rem;
+  height: 5.6rem;
+  background-color: var(--gray-300);
+  outline: none;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 1.6rem;
+  padding-left: 5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--black);
+  margin-right: 1.6rem;
+  box-sizing: border-box;
+}
+
+.search {
+  position: relative;
+}
+
+.searchIcon {
+  top: 1.6rem;
+  left: 1.6rem;
+  position: absolute;
+  z-index: 999;
+}
+
+.eventContainer input::placeholder {
+  color: var(--gray-200);
+  font-size: 1.6rem;
+}
+
+.notification {
+  width: 5.6rem;
+  height: 5.6rem;
+  box-sizing: border-box;
+  padding: 1.6rem;
+  outline: none;
+  border: none;
+  background-color: var(--gray-300);
+  border-radius: 0.6rem;
+  margin-right: 1.6rem;
+  cursor: pointer;
+}
+
+.profile {
+  width: 5.6rem;
+  height: 5.6rem;
+  box-sizing: border-box;
+  padding: 1.6rem;
+  outline: none;
+  border: none;
+  background-color: var(--gray-300);
+  border-radius: 0.6rem;
+  cursor: pointer;
 }

@@ -25,7 +25,7 @@ export function Sidebar() {
       <div className={styles.buttonGroup}>
 
         <SidebarButton title='Agenda' icon={Calendar} />
-        <SidebarButton title='Message' icon={Message} />
+        <SidebarButton title='Mensagem' icon={Message} />
         <SidebarButton title='Relatórios' icon={Diagram} />
 
         <h2 className={styles.title}>My Account</h2>
