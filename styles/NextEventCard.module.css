@@ -1,0 +1,31 @@
+.nextEventCard {
+  padding-inline: 1.6rem;
+  padding-block: 1.2rem;
+  border: 1px solid var(--gray-100);
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.nextEventCard h3 {
+  margin: 0;
+  margin-bottom: 0.4;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nextEventCard h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0;
+  color: var(--gray-200);
+  margin-bottom: 1.6rem;
+}
+
+.nextEventCard span {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--green-500);
+}
