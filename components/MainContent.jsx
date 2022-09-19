@@ -1,23 +1,26 @@
 import styles from '../styles/MainContent.module.css'
+import { EventModal } from './EventModal'
 import { NextEventCard } from './NextEventCard'
+import { Table } from './Table'
 
-export function MainContent(){
+export function MainContent() {
   return (
-    <main className={styles.mainContent}>
-      <div className={styles.calendarAndNextEventContainer}>
-        <div className={styles.calendar}>
-
+    <>
+      <main className={styles.mainContent}>
+        <div className={styles.calendarAndNextEventContainer}>
+          <div className={styles.nextEvent}>
+            <h2>Next Event</h2>
+            <NextEventCard />
+            <NextEventCard />
+          </div>
         </div>
-        <div className={styles.nextEvent}>
-          <h2>Next Event</h2>
-
-          <NextEventCard/>
-          <NextEventCard/>
+        <span className={styles.divider}></span>
+        <div className={styles.tableContainer}>
+          <Table />
         </div>
-      </div>
-      <div className={styles.tableContainer}>
-        <h1>Tabela</h1>
-      </div>
-    </main>
+      </main>
+      
+      <EventModal />
+    </>
   )
 }

@@ -11,7 +11,6 @@ export default function Home() {
         <Header />
         <MainContent />
       </div>
-
     </div>
   )
 }

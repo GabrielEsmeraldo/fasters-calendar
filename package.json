@@ -11,7 +11,10 @@
   "dependencies": {
     "next": "12.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dater": "^1.6.0",
+    "react-dom": "18.2.0",
+    "react-input-calendar": "^0.5.4",
+    "sassy-datepicker": "^0.10.0"
   },
   "devDependencies": {
     "eslint": "8.23.1",
