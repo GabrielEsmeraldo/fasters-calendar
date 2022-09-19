@@ -3,8 +3,13 @@ import Notification from '../assets/notification-bing.svg'
 import Profile from '../assets/profile.svg'
 import Search from '../assets/search-normal.svg'
 import Image from 'next/image'
+import { useState } from 'react'
+import { EventModal } from './EventModal'
 
 export function Header() {
+
+  const [modal, setModal] = useState(false)
+
   return (
     <header className={styles.header}>
       <div className={styles.dateNow}>
@@ -13,7 +18,7 @@ export function Header() {
       </div>
 
       <div className={styles.eventContainer}>
-        <button className={styles.createEvent}>+ Create event</button>
+        <button className={styles.createEvent} onClick={() => setModal(true)}>+ Create event</button>
 
         <div className={styles.search}>
           <div className={styles.searchIcon}>
@@ -45,6 +50,8 @@ export function Header() {
           />
         </button>
       </div>
+
+      {modal && <EventModal Cancel={setModal}/>}
     </header>
   )
 }

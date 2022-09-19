@@ -9,10 +9,11 @@
   --gray-400: #B4BAC5;
   --green-500: #4CA7A8;
   --green-100: #E9F4F5;
+  --red-500: #ff00009c;
 }
 
 html,
-body, button, a, textarea {
+body, button, a, textarea, input {
   padding: 0;
   margin: 0;
   font-family: 'DM Sans', sans-serif;

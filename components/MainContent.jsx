@@ -1,5 +1,4 @@
 import styles from '../styles/MainContent.module.css'
-import { EventModal } from './EventModal'
 import { NextEventCard } from './NextEventCard'
 import { Table } from './Table'
 
@@ -20,7 +19,7 @@ export function MainContent() {
         </div>
       </main>
       
-      <EventModal />
+      
     </>
   )
 }
