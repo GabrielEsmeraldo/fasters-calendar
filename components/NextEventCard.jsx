@@ -2,10 +2,10 @@ import Image from "next/image";
 import Clock from "../assets/clock.svg"
 import styles from "../styles/NextEventCard.module.css"
 
-export function NextEventCard() {
+export function NextEventCard({ title }) {
   return (
     <div className={styles.nextEventCard}>
-      <h3>Entrevista com RH</h3>
+      <h3>{title}</h3>
       <h4>January 4, 2022</h4>
       <span>
         <Image

@@ -51,7 +51,7 @@ export function Header() {
         </button>
       </div>
 
-      {modal && <EventModal Cancel={setModal}/>}
+      {modal && <EventModal Cancel={setModal} />}
     </header>
   )
 }

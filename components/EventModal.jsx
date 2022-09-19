@@ -1,11 +1,29 @@
+import { useContext } from "react"
+import { useState } from "react"
+import { EventContext } from "../pages"
 import styles from "../styles/EventModal.module.css"
 
 export function EventModal({ Cancel }) {
 
-  console.log(Cancel)
+  const { events, setEvents } = useContext(EventContext)
+  const [event, setEvent] = useState()
+  console.log(events)
 
-  function HandleSubmitForm() {
-    event.preventDefault()
+  function onChange(e) {
+    const { name, value } = e.target
+
+    setEvent({ ...event, [name]: value })
+  }
+
+  function HandleSubmitForm(e) {
+    e.preventDefault()
+
+    const newEvent = {       
+      title: event.title,
+      description: event.description
+    }
+
+    setEvents([...events, newEvent]);
   }
 
   return (
@@ -16,19 +34,18 @@ export function EventModal({ Cancel }) {
         <h1 className={styles.title}>Criar evento</h1>
 
         <form action="" onSubmit={HandleSubmitForm}>
-          <input type="text" placeholder="Titulo" />
-          <textarea placeholder="Descrição"></textarea>
-          <input type="date" placeholder="Data" />
+          <input name="title" type="text" placeholder="Titulo" onChange={onChange} />
+          <textarea name="description" placeholder="Descrição" onChange={onChange}></textarea>
+          {/* <input type="date" placeholder="Data" />
           <div className={styles.timeContainer}>
             <input className={styles.timeStart} type="time" placeholder="Hora" />
             <input className={styles.timeEnd} type="time" placeholder="Hora" />
           </div>
 
-          <input type="text" placeholder="Local" />
+          <input type="text" placeholder="Local" /> */}
           <button className={styles.confirmBtn} type="submit">Salvar evento</button>
           <button className={styles.cancelBtn} type="" onClick={() => Cancel(false)}>Cancelar</button>
         </form>
-
       </div>
     </div>
   )
