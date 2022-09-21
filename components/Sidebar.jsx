@@ -2,7 +2,6 @@ import styles from '../styles/Sidebar.module.css'
 import logo from '../assets/logo.png'
 import Image from 'next/image'
 import Calendar from '../assets/calendar.svg'
-
 import Message from '../assets/message.svg'
 import Diagram from '../assets/diagram.svg'
 import ProfileCircle from '../assets/profile-circle.svg'

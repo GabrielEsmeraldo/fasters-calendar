@@ -7,10 +7,8 @@ import { Table } from './Table'
 export function MainContent() {
 
   const { events } = useContext(EventContext)
-  console.log(events)
 
   return (
-    <>
       <main className={styles.mainContent}>
         <div className={styles.calendarAndNextEventContainer}>
           <div className={styles.calendarContainer}>
@@ -33,8 +31,5 @@ export function MainContent() {
           <Table />
         </div>
       </main>
-
-
-    </>
   )
 }
