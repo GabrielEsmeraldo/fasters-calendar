@@ -13,12 +13,16 @@ export function MainContent() {
     <>
       <main className={styles.mainContent}>
         <div className={styles.calendarAndNextEventContainer}>
+          <div className={styles.calendarContainer}>
+            <h1>calendario</h1>
+          </div>
+          
           <div className={styles.nextEvent}>
 
             <h2>Next Event</h2>
 
             {events.map((event) => (
-              <NextEventCard key={event.title} title={event.title} />
+              <NextEventCard key={event.id} id={event.id} title={event.title} date={event.date} hourStart={event.hourStart} hourEnd={event.hourEnd}/>
             )
             )}
 

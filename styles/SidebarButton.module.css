@@ -18,7 +18,3 @@
 .button:hover {
   background-color: var(--green-100);
 }
-
-.button:hover svg path {
-  stroke: var(--green-500);
-}

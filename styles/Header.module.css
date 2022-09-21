@@ -14,7 +14,7 @@
   display: block;
 }
 
-.dateNow span {
+.dateNow p {
   display: block;
   color: var(--gray-200);
   font-size: 1.6rem;

@@ -5,16 +5,11 @@ import styles from '../styles/Home.module.css'
 import { createContext, useContext } from 'react'
 import { useState } from 'react'
 
-const initialValue = {
-  title: "Titulo",
-  description: "lálálá"
-}
-
 export const EventContext = createContext({})
 
 export default function Home() {
 
-  const [events, setEvents] = useState([initialValue])
+  const [events, setEvents] = useState([])
 
   return (
     <EventContext.Provider value={{ events, setEvents }}>

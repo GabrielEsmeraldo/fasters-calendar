@@ -1,0 +1,55 @@
+.deleteModal {
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.445);
+  z-index: 2;
+}
+
+.deleteContainer {
+  display: flex;
+  flex-direction: column;
+  padding-block: 8rem;
+  padding-inline: 7rem;
+  background-color: var(--white);
+  border-radius: 0.6rem;
+}
+
+.deleteContainer .title {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 0;
+}
+
+.deleteContainer h2 {
+  text-align: center;
+}
+
+
+.deleteContainer button {
+  font-size: 1.6rem;
+  width: 50rem;
+  padding-block: 1.6rem;
+  padding-inline: 3.2rem;
+  display: block;
+  border-radius: 0.6rem;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.confirmBtn {
+  background-color: var(--red-500);
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background-color: var(--green-500);
+  cursor: pointer;
+}

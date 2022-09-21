@@ -6,15 +6,29 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { EventModal } from './EventModal'
 
+import { format } from 'date-fns'
+import ptBR from 'date-fns/locale/pt-BR'
+
 export function Header() {
 
   const [modal, setModal] = useState(false)
 
+  const date = new Date()
+  const month = format(date, "MMMM", {
+    locale: ptBR
+  })
+  const dateFormatted = format(date, "EEEE' • 'd' de 'MMMM' • 'y'", {
+    locale: ptBR
+  })
+
+  console.log(dateFormatted)
+
   return (
     <header className={styles.header}>
       <div className={styles.dateNow}>
-        <strong>Janeiro</strong>
-        <span>Quinta-Feira - 4 de Jan - 2022</span>
+        <strong>{month}</strong>
+        <p>{dateFormatted}</p>
+        {/* <span>Quinta-Feira - 4 de Jan - 2022</span> */}
       </div>
 
       <div className={styles.eventContainer}>
