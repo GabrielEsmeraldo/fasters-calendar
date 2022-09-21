@@ -1,9 +1,10 @@
-import { Header } from '../components/header'
 import { MainContent } from '../components/MainContent'
 import { Sidebar } from '../components/Sidebar'
+import { Header } from '../components/Header'
 import styles from '../styles/Home.module.css'
-import { createContext, useContext } from 'react'
+import { createContext } from 'react'
 import { useState } from 'react'
+
 
 export const EventContext = createContext({})
 

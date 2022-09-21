@@ -5,7 +5,6 @@ import Search from '../assets/search-normal.svg'
 import Image from 'next/image'
 import { useState } from 'react'
 import { EventModal } from './EventModal'
-
 import { format } from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
 
@@ -17,6 +16,7 @@ export function Header() {
   const month = format(date, "MMMM", {
     locale: ptBR
   })
+
   const dateFormatted = format(date, "EEEE' • 'd' de 'MMMM' • 'y'", {
     locale: ptBR
   })
