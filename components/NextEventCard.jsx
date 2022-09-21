@@ -50,8 +50,8 @@ export function NextEventCard({ id, title, date, hourStart, hourEnd }) {
         {hourStart} - {hourEnd}
       </span>
 
-      <button onClick={HandleDeleteEvent}>
-        Delete
+      <button onClick={HandleDeleteEvent} className={styles.deleteBtn}>
+        <p ></p>Delete
       </button>
 
       {deleteModal && <DeleteModal Cancel={HandleDeleteEvent} Delete={Deletar} />}

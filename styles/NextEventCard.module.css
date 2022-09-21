@@ -45,3 +45,7 @@
   font-size: 1.6rem;
   font-weight: 700;
 }
+
+.deleteBtn {
+  color: var(--red-500);
+}
